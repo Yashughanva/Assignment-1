@@ -1,0 +1,39 @@
+/***************************************************************
+                alphabetacoder.com
+ C# program for addition, subtraction, multiplication, division
+****************************************************************/
+
+using System;
+
+namespace Operation
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // declare variables
+            double a, b, w, x, y, z;
+            
+            //take input in fahrenheit
+            Console.Write("Enter first number: ");
+            a = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter second number: ");
+            b = Convert.ToDouble(Console.ReadLine());
+            
+            // compute operation
+            w = a + b;
+            x = a - b;
+            y = a * b;
+            z = a / b;
+        	
+            // display output
+            Console.WriteLine("Addition: "+w);
+            Console.WriteLine("Subtraction: "+x);
+            Console.WriteLine("Multiplication: "+y);
+            Console.WriteLine("Division: "+z);
+
+            // wait for user to press any key
+            Console.ReadKey();
+        }
+    }
+}

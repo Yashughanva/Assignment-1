@@ -1,0 +1,27 @@
+using System;
+
+namespace PracticeEnvironment
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Input first number:");
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Input second number:");
+            int y = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(IsTwenty());
+
+            bool IsTwenty()
+            {
+                if (x == 20 || y == 20)
+                    return true;
+                else if (x + y == 20)
+                    return true;
+                else
+                    return false;
+            }
+        }
+    }
+}
+ 

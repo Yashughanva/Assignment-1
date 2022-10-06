@@ -1,0 +1,11 @@
+using System;
+using System.Linq;
+class Demo {
+   static void Main() {
+      // original string
+      string str = "Hello World";
+      // reverse the string
+      string res = string.Join(" ", str.Split(' ').Select(s => new String(s.Reverse().ToArray())));
+      Console.WriteLine(res);
+   }
+}

@@ -1,0 +1,22 @@
+
+using System;
+namespace division_two_numbers
+{
+	class DivisionTwoNumbers
+	{
+		static void Main(String[] args)
+		{
+			int a, b;
+			
+			Console.Write("Enter first number:\t");
+			a = int.Parse(Console.ReadLine());
+			
+			Console.Write("Enter second number:\t");
+			b = int.Parse(Console.ReadLine());
+			
+			int div = a / b;
+			
+			Console.WriteLine("Quotient of two numbers: " + div);
+		}
+	}
+}

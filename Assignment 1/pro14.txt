@@ -1,0 +1,34 @@
+int celcius;
+    Console.WriteLine(“Please insert a value of Celcius”);
+    celcius = Convert.ToInt32(Console.ReadLine());
+
+    Console.WriteLine(“the amount of {0} Celcius is:\nFahrenheit: {1}\nKelvin: {2}”,
+    celcius, Convert.ToString(CelciusFahrenheit(celcius)), CelciusKelvin(celcius));
+
+    Console.Read();
+    }
+
+    static double FahrenheitCelcius(int Fahrenheit)
+    {
+        return (Fahrenheit – 32) * 5/9;
+    }
+    static double KelvinCelcius (int Kelvin)
+    {
+        return Kelvin – 273.15;
+    }
+    static double CelciusFahrenheit(int Celcius)
+    {
+        return (Celcius * 9 / 5) + 32;
+    }
+    static double KelvinFahrenheit(int Kelvin)
+    {
+        return (Kelvin – 273.15) * 9 / 5 + 32;
+    }
+    static double FahrenheitKelvin(int Fahrenheit)
+    {
+        return (Fahrenheit – 32) * 5 / 9 + 273.15;
+    }
+    static double CelciusKelvin(int Celcius)
+    {
+        return Celcius + 273.15;
+    }

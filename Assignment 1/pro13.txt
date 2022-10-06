@@ -1,0 +1,20 @@
+int num;
+
+    Console.WriteLine(“Please enter a numeric value”);
+    num = Convert.ToInt32(Console.ReadLine());
+
+    Console.WriteLine(“\n\n”);
+
+    for (int i = 0; i < 5; i++)
+    {
+        if (i == 0 || i == 4)
+        {
+            Console.WriteLine(“{0}{0}{0}”, num);
+        }
+        else
+        {
+            Console.WriteLine(“{0} {0}”, num);
+        }
+    }
+
+    Console.Read();
